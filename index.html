@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Dynamic Website</title>
+</head>
+<body>
+    <div class="header">
+        <div class="navbar">
+            <h5 class="logo">Omnipedia</h5> 
+            <!--
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            -->
+        </div>
+        
+        <header>
+            <h2>The Best Tutoring Service<br></h2>
+            <h5>Aiming For A More Educated World</h5>
+            <h6><br>A company that wants nothing but the best for students <br>of all ages to receive the assistance they need. <br>Our goal is to give all our clients availability to the <br>highest level of academic success.</h6>
+        </header>
+    </div>
+    <div class="explaination">
+      <h2>What is Omnipedia?</h2>
+      <h3>
+        <br>Omnipedia offers tutors who are background checked, drug tested,
+        <br> and trained come to a location of your choosing, whether that be your residence 
+        <br>or a public place such as a library. We offer tutors who specialize in a variety of 
+        <br>subjects ranging from gradeschool curriculum to standard collegiate level courses.
+      </h3>
+      <h2><br><br><br>What does Omnipedia mean?</h2>
+      <h3>
+        <br>Omni- is a prefix meaning "all" and -pedia is a suffix roughly meaning "learning."
+        <br>That being said we aim to spread the knowledge of everything under the sun!
+      </h3>
+      <h2><br><br><br>Omnipedia VS Freelancers</h2>
+      <h3>
+        <br>Omnipedia is flexible and cares about it's students unlike many freelancers <br>trying to gain a quick buck. Additionally, Omnipedia believes in person learning <br>is the most effective at all ages and most freelancers simply don't offer that.
+      </h3>
+    </div>
+    <div class="info">
+        <div class="box-container">
+
+            <div class="box-item">
+            <div class="flip-box">
+              <div class="flip-box-front text-center" style="background-image: url('Assets/professional_red.jpg');">
+                <div class="inner color-white">
+                  <h3 class="flip-box-header">Professional</h3>
+                  <p>Omnipedia is reliable, quality, and flexible!</p>
+                  <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
+                </div>
+              </div>
+              <div class="flip-box-back text-center" style="background-image: url('Assets/professional_red.jpg');">
+                <div class="inner color-white">
+                  <h3 class="flip-box-header">You Matter!</h3>
+                  <p>We care about our customers, their education, and their goals.</p>
+                  <button class="flip-box-button">Book With Us</button>
+                </div>
+              </div>
+            </div>
+            </div>
+
+            <div class="box-item">
+            <div class="flip-box">
+              <div class="flip-box-front text-center" style="background-image: url('Assets/stressing_blue.jpg');">
+                <div class="inner color-white">
+                  <h3 class="flip-box-header">Stress Free</h3>
+                  <p>Let Omnipedia take care of everything!</p>
+                  <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
+                </div>
+              </div>
+              <div class="flip-box-back text-center" style="background-image: url('Assets/stressing_blue.jpg');">
+                <div class="inner color-white">
+                  <h3 class="flip-box-header">What Do You Want?</h3>
+                  <p>Tell us what you're looking for and we'll provide the best tutor for the job.</p>
+                  <button class="flip-box-button">Book With Us</button>
+                </div>
+              </div>
+            </div>
+            </div>
+
+            <div class="box-item">
+            <div class="flip-box">
+              <div class="flip-box-front text-center filter-" style="background-image: url('Assets/trusted_green.jpg');">
+                <div class="inner color-white">
+                  <h3 class="flip-box-header">Trusted</h3>
+                  <p>Omnipedia only provides quality tutors!</p>
+                  <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
+                </div>
+              </div>
+              <div class="flip-box-back text-center" style="background-image: url('Assets/trusted_green.jpg');">
+                <div class="inner color-white">
+                  <h3 class="flip-box-header">Our Tutors Are...</h3>
+                  <p>Background Checked, Drug Tested, and Trained.</p>
+                  <button class="flip-box-button">Book With Us</button>
+                </div>
+              </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Form -->
+
+    <div class="contact-contain">
+
+        <div class="wrapper">
+      
+          <div class="form">
+            <h4>GET IN TOUCH</h4>
+            <h2 class="form-headline">Send us a message</h2>
+            <form id="submit-form" action="">
+              <p>
+                <input id="name" class="form-input" type="text" placeholder="Your Name*">
+                <small class="name-error"></small>
+              </p>
+              <p>
+                <input id="email" class="form-input" type="email" placeholder="Your Email*">
+                <small class="name-error"></small>
+              </p>
+              <p class="full-width">
+                <input id="company-name" class="form-input" type="text" placeholder="Subject*" required>
+                <small></small>
+              </p>
+              <p class="full-width">
+                <textarea  minlength="20" id="message" cols="30" rows="7" placeholder="Your Message*" required></textarea>
+                <small></small>
+              </p>
+              <p class="full-width">
+                <input type="checkbox" id="checkbox" name="checkbox" checked> Yes, I would like to receive communications by call / email about Omnipedia's services.
+              </p>
+              <p class="full-width">
+                <input type="submit" class="submit-btn" value="Submit" onclick="checkValidations()">
+                <button class="reset-btn" onclick="reset()">Reset</button>
+              </p>
+            </form>
+          </div>
+      
+          <div class="contacts contact-wrapper">
+      
+            <ul>
+              <li>We've taught over <span class="highlight-text-grey">hundreds
+                  </span> of students of all ages. Ready to take
+                your learning to the next level?</li>
+              <span class="hightlight-contact-info">
+                <li class="email-info"><i class="fa fa-envelope" aria-hidden="true"></i> TheOmnipedia@gmail.com</li>
+                <li><i class="fa fa-phone" aria-hidden="true"></i> <span class="highlight-text">+1 (469) 371 8410</span></li>
+              </span>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+
+      <section class="contact-area" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="contact-content text-center">
+                        <a href="#"><img src="Assets/footerlogo1.png" alt="logo"></a>
+                        <p>Omnipedia | Better Learning</p>
+                        <div class="hr"></div>
+                        <h6>Dallas, TX, USA</h6>
+                        <h6>+1 (469) 371 8410<span>|</span>TheOmnipedia@gmail.com</h6>
+                        <div class="contact-social">
+                            <ul>
+                                <li><a class="hover-target" href=""><i class="fa fa-facebook"></i></a></li>
+                                <li><a class="hover-target" href=""><i class="fa fa-instagram"></i></a></li>
+                                <li><a class="hover-target" href=""><i class="fa fa-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =============== 1.9 Contact Area End ====================-->
+    <!-- =============== 1.9 Footer Area Start ====================-->
+    <footer>
+        <p>Copyright &copy; 2025 <img src="Assets/footerlogo1.png" alt="logo"> All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
